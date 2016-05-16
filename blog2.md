@@ -5,6 +5,9 @@ Welcome to serious-app-development-mountain! In the second part of our series on
 ### Cross-platform HTML5 app development is hard
 Yes, even with awesome Generator-M-Ionic, awesome Angular, awesome Cordova, awesome Ionic which supports iOS, Android, the mobile web (since [Ionic 1.2](http://blog.ionic.io/announcing-ionic-1-2/)) and even Windows (in [Ionic 2](http://blog.ionic.io/announcing-windows-support-in-ionic-2/)) cross-platform HTML5 app development can be a pain.
 
+> and even Windows (in [Ionic 2](http://blog.ionic.io/announcing-windows-support-in-ionic-2/))
+Thats not completely true, since in [this](http://blog.ionic.io/announcing-ionic-1-2/) blog post they announce support for Windows (10, with the Edge browser) with Ionic 1.2.
+
 Maybe your app should run on phones and tablets. With a different, especially designed layout and workflow for each of them. Ah, and what the customer forgot to tell you: obviously it should also run in the browser! It's built using web technologies anyways, isn't it? Maybe even on desktops using [Electron](http://electron.atom.io/)? You'll be optimizing and testing a lot!
 
 Even when that's taken care of there's a lot of complex topics like handling translations, offline data, persistence and data syncing between devices or the backend and your app. Things that need to be thoroughly coded while you juggle certificates and licenses when building for the different app stores, trying to integrate complicated Push services or coding custom Cordova plugins and hooks. And usually when it's the very last thing you need: along come changing customer requirements and you're back to the drawing board.
@@ -22,6 +25,8 @@ Your Generator-M-Ionic project comes with established coding guidelines and work
 ![image](img/eslint.png)
 
 To additionally get linting notifications as you develop in your editor or to learn how to configure the default set of rules, check out our [ESLint Guide](https://github.com/mwaylabs/generator-m-ionic/blob/master/docs/guides/eslint.md). If you are working with JSON files in your `app/` folder -for instance to handle translations- the generator's linting will validate those too! This keeps your development trouble free.
+
+> What about pre-commit hooks? https://www.npmjs.com/package/husky
 
 #### Testing
 Another area where you just don't have to deal with the hassle of setting up and configuring everything yourself is unit testing with karma and end-to-end testing with protractor. It just works. Your sample app even comes with a ready-to-use test-suite that you can try out right now by running:
@@ -99,6 +104,9 @@ Upon saving, your `gulp watch` task will automatically compile and inject the re
 I know. Before we don't add some nice [Cordova Plugins](http://ngcordova.com/docs/plugins/) to our app, it won't be a real hybrid app. So let's do it!
 
 Your project comes with a local installation of the latest version of the [Cordova CLI](https://cordova.apache.org/docs/en/latest/guide/cli/index.html) which you can invoke through Gulp. We install it locally so you don't have to worry about which project you set up with which version. It's always the one it got set up with. The syntax is almost exactly the same as using a global CLI installation. So for instance to install the Cordova camera plugin run:
+
+> In my opinion the point on the local cordova and why (professonal department with many customers and apps, customers which want a small CR on an old app, etc.) is not explained and stressed enough, since I think for most people it looks more like a burden than help 
+
 ```sh
 gulp --cordova "plugin add org.apache.cordova.camera --save"
 ```
@@ -164,6 +172,10 @@ gulp --cordova "run ios"
 # or
 gulp --cordova "run android"
 ```
+
+> Maybe we should gave a hint for all people really knew to this topic to preinstall the SDKs, certifiactes etc.
+> On iOS for example it will be no problem running on the simulator without a developer account. For the device you need a provisioned device and certifiacte
+
 Two things happen here:
 
 1. Gulp will build your app using `gulp build`
@@ -191,6 +203,8 @@ This is just like `gulp watch` but only for the `www/` folder. It builds your ap
 ### Ecosystems
 I bet you start feeling like a real pro already. And you should! We're getting close to orbit. Although you're more and more becoming a seasoned astronaut there are some things you just don't want to build yourself every time. Push services, user management or other backend services for instance. Luckily there's a series of choices of platforms to handle those tasks for you: the [Ionic Platform](http://ionic.io/platform) is popular and feature rich, for our enterprise customers we offer our [Relution Enterprise Mobility Platform](http://www.mwaysolutions.com/en/mobile-device-management-mdm/) and there are many other options.
 
+> Please be careful with these terms like "Relution Enterprise Mobility Platform" I don't think we call any part of reultion so. I think you mean MADP, mobile application development platform or the newest name (no idea if its public yet) BaaS, backend as a service. Because all this MDM stuff is not very interessting for developers.
+
 The 'Ecosystems' section of our [guides](https://github.com/mwaylabs/generator-m-ionic#guides) can help you integrate some of these platforms with nice set up guides, generated sample code and templates. Most of the work we've done for you already, so focussing on building your app is easier than ever.
 
 ### Congratulations!
@@ -200,3 +214,5 @@ You have conquered the mountain and learned how to season your app with a lot di
 One thing we're particularly interested in: Live-reload for the device. How important do you think it is?
 
 Feedback, ideas, comments regarding this blog post or any of the features discussed here are very welcome in either the comments section below, at our [Generator-M-Ionic's Github repository](https://github.com/mwaylabs/generator-m-ionic) or the [Generator-M-Ionic Gitter Chat](https://gitter.im/mwaylabs/generator-m-ionic).
+
+> why here? and not at the end of the series?
