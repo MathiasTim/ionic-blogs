@@ -1,5 +1,5 @@
 ### A pro's workflows for building apps with Ionic. Part 1: Playground
-At [M-Way Solutions](http://www.mwaysolutions.com/en/enterprise-mobility-management/) we've been building large-scale enterprise-level apps with Ionic for the past two years. The challenges we faced sparked the creation of [Generator-M-Ionic](https://github.com/mwaylabs/generator-m-ionic), a powerful open-source collection of development tools, that put the fruits of our extensive experience right at the end of your fingertips.
+At [M-Way Solutions](http://www.mwaysolutions.com/en/mobile-business-apps-solutions/) we've been building large-scale enterprise-level apps with Ionic for the past two years. The challenges we faced sparked the creation of [Generator-M-Ionic](https://github.com/mwaylabs/generator-m-ionic), a powerful open-source collection of development tools, that put the fruits of our extensive experience right at the end of your fingertips.
 
 Are you looking for a single tool that you can use to quickly create compelling prototypes for impressing your customers *AND* that later scales with complex project requirements, like testing, quality assurance, and continuous integration? Then look no further and prepare yourself for a thrilling ride through our generator's Building-apps-with-Ionic adventure island!
 
@@ -12,7 +12,7 @@ These challenges led to the genesis of [Generator-M-Ionic](https://github.com/mw
  - for development, testing, quality assurance, building, continuous integration
  - for complex project requirements like managing different sets and versions of APIs, app icons and splash screens
 - **Embed nicely into ecosystem**
-  - integrates nicely into different platform solutions like [Ionic Platform](http://ionicframework.com/docs/api/utility/ionic.Platform/) or our own [Relution Platform](http://www.mwaysolutions.com/en/mobile-device-management-mdm/)
+  - integrates nicely into different platform solutions like [Ionic Platform](http://ionicframework.com/docs/api/utility/ionic.Platform/) or our own [Relution Platform](https://www.relution.io/de/mobile-application-development-platform/)
   - use technology stack many developers already know: [Git](https://git-scm.com/), [Yeoman](http://yeoman.io/), [Bower](http://bower.io/), [Gulp](http://gulpjs.com/), [Cordova](https://cordova.apache.org/), ...
 - **Standardize project setup**
   - tame and wire together an ever-changing and **complex frontend technology stack**
